@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <form>
+        <label for="location">Zipcode:</label>
+        <input
+          id="location"
+          type="text"
+          name="zipcode"
+          autofocus="on" //set first input to autofocus to help draw users attention
+          maxlength="5" //lmits the number of characters added
+          required //tell the user that this field must be filled
+          />
+          <div>
+            <label for=""form-message>Your Message</label>
+            <textarea
+            id="form-message"
+            name="message"
+            autofocus="on"
+            required
+            maxlength="200"
+            ></textarea>
+          </div>
+          //this form above states that this is a multi line text field
+          that will store data within the name message.
+          the autofocus is on and the field is required & only 
+          200 characters can be entered.
+      </form>
+    </main>
+  </body>
+</html>
